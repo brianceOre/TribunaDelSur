@@ -22,6 +22,7 @@ h1, h2, h3 {
   font-family: 'Pacifico', cursive;
   color: var(--turquesa);
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 h1 { font-size: 100px; 
@@ -88,17 +89,26 @@ nav .menu li a:hover {
 }
 
 .menu-section {
+  
   padding: 4rem 1rem;
+  justify-content: center;
   background: var(--gris-claro);
-  text-align: center;
   
 }
-
+  
+    
 a {
   text-decoration: none;
 }
 
+.filtros {
+  display: flex;
+  justify-content: center;
+}
+
 .filtros button {
+  
+  
   background: var(--lima);
   border: none;
   padding: 0.5rem 1rem;
@@ -109,7 +119,9 @@ a {
   transition: background 0.3s ease;
 }
 
-.filtros button:hover { background: #b2c618; }
+.filtros button:hover { 
+  background: #b2c618; 
+}
 
 .platos {
   display: flex;
