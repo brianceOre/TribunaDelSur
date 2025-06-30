@@ -42,7 +42,7 @@
     
     <div class="platos">
       <div class="plato plato-destacado">
-        <img src="./img/cevicheclasico .jpg" alt="Ceviche Clásico">
+        <img src="./img/causa_1.jpg" alt="Ceviche Clásico">
         <div class="detalle">
           <h3>Ceviche Clásico <span class="icon picante">🌶️</span></h3>
           <p>Pescado fresco, limón, cebolla, ají limo, camote.</p>
@@ -51,7 +51,7 @@
       </div>
 
       <div class="plato plato-destacado">
-        <img src="./img/cevicheclasico .jpg" alt="Ceviche Clásico">
+        <img src="./img/causa_2.jpg" alt="Ceviche Clásico">
         <div class="detalle">
           <h3>Ceviche Clásico <span class="icon picante">🌶️</span></h3>
           <p>Pescado fresco, limón, cebolla, ají limo, camote.</p>
@@ -60,25 +60,42 @@
       </div>
 
       <div class="plato plato-destacado">
-        <img src="./img/cevicheclasico .jpg" alt="Ceviche Clásico">
+        <img src="./img/causa_3.jpg" alt="Ceviche Clásico">
         <div class="detalle">
           <h3>Ceviche Mixto</h3>
           <p>Pescado fresco, limón, cebolla, ají limo, camote.</p>
           <span class="precio">S/ 32.00</span>
         </div>
       </div>
-
-      <div class="plato plato-destacado">
-        <img src="./img/cevicheclasico .jpg" alt="Ceviche Clásico">
-        <div class="detalle">
-          <h3>Ceviche "Tribuna del sur"</h3>
-          <p>Pescado fresco, limón, cebolla, ají limo, camote.</p>
-          <span class="precio">S/ 32.00</span>
-        </div>    
-        
+             
       </div>
-    </div>
+    </section>
+
+
+  <section id="reservas">
+    <h2>Reservas / Pedidos</h2>
+
+    <form action="https://formsubmit.co/leandroquispe2217@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="correo" placeholder="Correo" required>
+      <input type="date" name="fecha" required>
+      <input type="time" name="hora" required>
+      <input type="number" name="personas" placeholder="Nº de personas" required>
+      <textarea name="comentarios" placeholder="Comentarios adicionales"></textarea>
+
+      <!-- Campos ocultos para configuración extra -->
+      <input type="hidden" name="_subject" value="¡Nueva reserva desde tu web!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="./index.html">
+
+      <button type="submit">Reservar</button>
+    </form>
+
+    <a href="https://wa.me/923570299?text=Hola%20,quiero%20hacer%20una%20reserva😁%20" target="_blank"
+      class="whatsapp-btn">💬 Reserva por WhatsApp</a>
   </section>
+
 
   <footer>
     <p> &COPY; 2025 La Tribuna del Sur. Todos los derechos reservados.</p>
