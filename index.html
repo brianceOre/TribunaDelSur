@@ -95,7 +95,24 @@
 
   <section id="reservas">
     <h2>Reservas / Pedidos</h2>
-    <form>
+
+  <form action="https://formsubmit.co/leandroquispe2217@gmail.com" method="POST">
+  <input type="text" name="nombre" placeholder="Nombre" required>
+  <input type="email" name="correo" placeholder="Correo" required>
+  <input type="date" name="fecha" required>
+  <input type="time" name="hora" required>
+  <input type="number" name="personas" placeholder="Nº de personas" required>
+  <textarea name="comentarios" placeholder="Comentarios adicionales"></textarea>
+
+  <!-- Campos ocultos para configuración extra -->
+  <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="¡Nueva reserva desde tu web!">
+
+  <button type="submit">Reservar</button>
+</form>
+
+    <!-- <form>
       <input type="text" placeholder="Nombre" required>
       <input type="email" placeholder="Correo" required>
       <input type="date" required>
@@ -103,7 +120,7 @@
       <input type="number" placeholder="Nº de personas" required>
       <textarea placeholder="Comentarios adicionales"></textarea>
       <button type="submit">Reservar</button>
-    </form>
+    </form> -->
     <a href="https://wa.me/923570299?text=Hola%20,quiero%20hacer%20una%20reserva😁%20" target="_blank"
       class="whatsapp-btn">💬 Reserva por WhatsApp</a>
   </section>
