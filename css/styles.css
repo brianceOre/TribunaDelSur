@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap');
+
+:root {
+  --turquesa: #1abc9c;
+  --lima: #cddc39;
+  --coral: #ff6f61;
+  --blanco: #ffffff;
+  --gris-oscuro: #2c3e50;
+  --gris-claro: #f8f9fa;
+  --sombra-suave: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: var(--blanco);
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  color: var(--turquesa);
+  margin-bottom: 0.5rem;
+}
+
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/videos/Olas.mp4") center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--blanco);
+  padding: 0 1rem;
+  margin-top: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero .btn {
+  background: var(--coral);
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #e45a50;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  background: var(--blanco);
+  box-shadow: 0 2px 5px var(--sombra-suave);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 50px;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: var(--gris-oscuro);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+nav .menu li a:hover {
+  background: var(--turquesa);
+  color: white;
+}
+
+/* Menú */
+.menu-section {
+  padding: 4rem 1rem;
+  background: var(--gris-claro);
+  text-align: center;
+}
+
+.filtros button {
+  background: var(--lima);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.filtros button:hover {
+  background: #b2c618;
+}
+
+.platos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.plato {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plato img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.plato:hover {
+  transform: translateY(-5px);
+}
+
+.precio {
+  font-weight: bold;
+  color: var(--coral);
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* Sobre Nosotros */
+#nosotros {
+  padding: 4rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+#nosotros img {
+  width: 560px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+}
+
+/* Galería */
+.galeria {
+  background: var(--gris-claro);
+  padding: 4rem 1rem;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.feed img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+/* Reservas */
+#reservas {
+  padding: 4rem 1rem;
+  background: white;
+  text-align: center;
+}
+
+#reservas form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+#reservas input, #reservas textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Open Sans';
+  width: 100%;
+  font-size: 1rem;
+}
+
+#reservas button {
+  background: var(--turquesa);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #25D366;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+
+#contacto {
+  background: var(--gris-claro);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+#contacto .info {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+
+footer {
+  background: var(--gris-oscuro);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Íconos personalizados */
+.icon.picante::after {
+  content: '🌶️';
+  margin-left: 0.3rem;
+}
+
+.icon.vegano::after {
+  content: '🌱';
+  margin-left: 0.3rem;
+}
+
+.icon.recomendado::after {
+  content: '⭐';
+  margin-left: 0.3rem;
+}
+
+/* Modo oscuro automático */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #e0e0e0;
+  }
+  .plato, #nosotros, #contacto, .menu-section, #reservas {
+    background: #262626;
+    color: #f0f0f0;
+  }
+  nav .menu, footer {
+    background: #111;
+  }
+  .hero {
+    background-blend-mode: multiply;
+  }
+  .filtros button {
+    background: #9cbd28;
+  }
+  #reservas input, #reservas textarea {
+    background: #333;
+    color: white;
+    border-color: #444;
+  }
+}
+
+.chef-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+}
+
+.plato-destacado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
+
+.plato-destacado img {
+  width: 50%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.plato-destacado .detalle {
+  flex: 1;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .plato-destacado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .plato-destacado img {
+    width: 100%;
+  }
+
+  .plato-destacado .detalle {
+    text-align: center;
+  }
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#olas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+
+  font-size: 100px;
+}
+
+h2 {
+
+ font-size:50px;
+}
+

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap');
+
+:root {
+  --turquesa: #1abc9c;
+  --lima: #cddc39;
+  --coral: #ff6f61;
+  --blanco: #ffffff;
+  --gris-oscuro: #2c3e50;
+  --gris-claro: #f8f9fa;
+  --sombra-suave: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: var(--negro);
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  color: var(--turquesa);
+  margin-bottom: 0.5rem;
+}
+
+h1 { font-size: 100px; 
+text-shadow: 0 0 20px #1f1e1e;
+}
+
+h2 { font-size: 50px; }
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--blanco);
+  padding: 0 1rem;
+  margin-top: 10px;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 1rem; }
+.hero .btn {
+  background: var(--coral);
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.hero .btn:hover { background: #e45a50; }
+
+nav .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  background: var(--blanco);
+  box-shadow: 0 2px 5px var(--sombra-suave);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 50px;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: var(--gris-oscuro);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+nav .menu li a:hover {
+  background: var(--turquesa);
+  color: white;
+}
+
+.menu-section {
+  padding: 4rem 1rem;
+  background: var(--gris-claro);
+  text-align: center;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.filtros button {
+  background: var(--lima);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.filtros button:hover { background: #b2c618; }
+
+.platos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.plato {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  flex: 1;
+}
+
+.plato img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.plato:hover { transform: translateY(-5px); }
+
+.precio {
+  font-weight: bold;
+  color: var(--coral);
+  margin-top: 0.5rem;
+  display: block;
+}
+
+#nosotros {
+  padding: 4rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+#nosotros img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.galeria {
+  background: var(--gris-claro);
+  padding: 4rem 1rem;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.feed img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+#reservas {
+  padding: 4rem 1rem;
+  background: white;
+  text-align: center;
+}
+
+#reservas form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+#reservas input, #reservas textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Open Sans';
+  width: 100%;
+  font-size: 1rem;
+}
+
+#reservas button {
+  background: var(--turquesa);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #25D366;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover { background: #1ebe5d; }
+
+#contacto {
+  background: var(--gris-claro);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+#contacto .info {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+footer {
+  background: var(--gris-oscuro);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.icon.picante::after { content: '🌶️'; margin-left: 0.3rem; }
+.icon.vegano::after { content: '🌱'; margin-left: 0.3rem; }
+.icon.recomendado::after { content: '⭐'; margin-left: 0.3rem; }
+
+@media (prefers-color-scheme: dark) {
+  body { background: #1a1a1a; color: #e0e0e0; }
+  .plato, #nosotros, #contacto, .menu-section, #reservas, #galeria { background: #262626; color: #f0f0f0; }
+  nav .menu, footer { background: #111; }
+  .filtros button { background: #9cbd28; }
+  #reservas input, #reservas textarea { background: #333; color: white; border-color: #444; }
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#olas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
